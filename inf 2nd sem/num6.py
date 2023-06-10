@@ -10,8 +10,8 @@ cost = int(input())
 def ntflx(x,y,z,cost):
     if (cost - (x + y) < cost - (x + z) and cost - (x + y) < cost - (y + z)):
         print('Подписку могут купить Алиса и Боб')
-    if (cost - (x + z) < cost - (x + y) and cost - (x + z) < cost - (y + z)):
-        print('Подписку могут купить Алиса и Чарли')
     if (cost - (y + z) < cost - (x + y) and cost - (y + z) < cost - (x + z)):
         print('Подписку могут купить Боб и Чарли')
+    if (cost - (x + z) < cost - (x + y) and cost - (x + z) < cost - (y + z)):
+        print('Подписку могут купить Алиса и Чарли')
 ntflx(x,y,z,cost)
